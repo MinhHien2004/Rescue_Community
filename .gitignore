@@ -24,3 +24,5 @@ env/
 
 # Migrations
 migrations/
+data/
+.pytest_cache/
