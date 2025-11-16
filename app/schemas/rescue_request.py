@@ -18,6 +18,8 @@ class RescueRequestBase(BaseModel):
     contract: Optional[str] = None
     post_url: Optional[str] = None
     region_id: Optional[int] = None
+    longitude: Optional[float] = None  
+    latitude: Optional[float] = None   
 
 class RescueRequestCreate(RescueRequestBase):
     pass

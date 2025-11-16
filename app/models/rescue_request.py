@@ -21,6 +21,8 @@ class RescueRequest(Base):
     contract = Column(String, nullable=True)
     post_url = Column(String, nullable=True)
     region_id = Column(Integer, ForeignKey("region.id"))
+    longitude = Column(Float, nullable=True)
+    latitude = Column(Float, nullable=True)
 
     category = relationship("Category")
     source = relationship("Source")
